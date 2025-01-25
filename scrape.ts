@@ -1,16 +1,7 @@
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 import fs from 'fs';
-
-interface Product {
-  name: string;
-  type: string | null;
-  mainIngredient: string | null;
-  brand: string | null;
-  saleLocation: string | null;
-  onlineReference: string;
-  dateAccessed: string;
-}
+import { Product } from './types';
 
 const translateToEnglish = (portugueseText: string): string => {
   const translations: { [key: string]: string } = {
