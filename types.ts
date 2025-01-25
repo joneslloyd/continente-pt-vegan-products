@@ -6,4 +6,5 @@ export interface Product {
   saleLocation: string | null;
   onlineReference: string;
   dateAccessed: string;
+  description?: string | null;
 }
